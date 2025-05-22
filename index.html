@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="utils.js" defer></script>
+    <title>hi vie :3c</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flat-ui/2.3.0/css/flat-ui.min.css" integrity="sha512-6f7HT84a/AplPkpSRSKWqbseRTG4aRrhadjZezYQ0oVk/B+nm/US5KzQkyyOyh0Mn9cyDdChRdS9qaxJRHayww==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+    <div class="div-inputs">
+    
+        <div class="checkbox-wrapper">
+            <input type="checkbox" name="autoincrease" id="input-autoincrease">
+            <label for="input-autoincrease"> ← auto-increase rows?</label> 
+        </div>
+        <div>
+            <input type="number" name="stitches" id="input-stitches">
+            <label for="input-stitches"> ← how many stitches per row?</label>
+        </div>
+</div>
+
+
+
+
+
+     <div id="div-pip-container">
+  <div id="div-pip-element">
+    <div class="div-counters-wrapper">
+      <div class="counter-column">
+        <button id="button-stitch" class="button-main button-counter">
+          <div id="stitches-counter">0</div>
+          <div id="stitches-counter-text">stitches</div>
+        </button>
+        <button id="button-undo" class="button-main"><i>undo</i></button>
+      </div>
+
+      <div class="counter-column">
+        <button id="button-row" class="button-main button-counter">
+          <div id="rows-counter">0</div>
+          <div id="rows-counter-text">rows</div>
+        </button>
+        <button id="button-reset" class="button-main"><i>reset count</i></button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+        <div id="div-pip-message" style="display: none;">
+            <p>yo... she's popped out rn ☝</p>
+        </div>
+    </div>
+
+
+
+    <div class="div-buttons">
+        <button id="button-edit" class="button-main"><i>edit values?</i></button>
+    </div>
+    <div id="div-button-pip" class="div-buttons">
+        <button id="button-start-pip" class="button-main"><i class="fui-export"></i></button>
+    </div>
+    <div id="div-button-help">
+        <button id="button-help" data-bs-toggle="modal" data-bs-target="#help-modal">
+            <i class="fui-question-circle"></i>
+        </button>
+    </div>
+
+    <div class="modal fade" id="help-modal" tabindex="-1" aria-labelledby="help-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="help-modal-label">
+                        <i class="fui-info-circle"></i>
+                        about this project
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        hey vie!! this is a modified version of <b>stitches and rows</b>, originally made by tales carvalho, and modified by me, your girlfriend :3c
+                    </p>
+                    <p>
+                        basically i just nabbed the original file from github and edited some of the styling and other values :3c enjoy!!!
+                    </p>
+                    <p>
+                        here's the link to the original guy's github ☝ and also the heart links to the gdrive of our videos together HAHAHAHAHAHAH
+                    </p>
+
+                    <p style="text-align:center;">
+                        <a class="icon-link" href="https://github.com/Tales-Carvalho/stitches-and-rows" target="_blank"><i class="fui-github"></i></a> | 
+                        <a class="icon-link" href="https://drive.google.com/drive/folders/1ykNDlBkSJsogEWPjv0USYUDedQ72cVC3?usp=sharing" target="_blank"><i class="fui-heart"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
